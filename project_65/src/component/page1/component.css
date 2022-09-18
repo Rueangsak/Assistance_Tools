@@ -33,10 +33,13 @@
   color: white;
 }
 .component-image {
-  width: 353px;
-  height: 311px;
+  width: 500px;
+  height: 500px;
   align-self: flex-end;
   object-fit: cover;
+  border-color: #105749;
+  border-radius: 32px;
+  border-width: 2px;
 }
 .component-container1 {
   flex: 0 0 auto;
