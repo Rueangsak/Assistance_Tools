@@ -1,7 +1,8 @@
 import "./App.css";
 import Main from "./pages/Main";
 import { Routes,Route,BrowserRouter,Link, Navigate ,Redirect  } from "react-router-dom";
-import Ws from "./pages/Ws";
+import Work from "./pages/Work";
+import './style.css'
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <BrowserRouter>
           <Routes>
             <Route path="/" element={< Main />} />
-            <Route path="/Ws" element={<Ws />} />
+            <Route path="/Work" element={<Work />} />
           </Routes>
       </BrowserRouter>
       
