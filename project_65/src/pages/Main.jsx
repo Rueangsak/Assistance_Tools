@@ -1,5 +1,5 @@
 import "../App.css";
-import { Show } from "../components/show";
+
 import { Navigation } from "../components/navigation";
 import { Header } from "../components/header";
 import { Features } from "../components/features";
@@ -34,7 +34,7 @@ const Main = () => {
       <About data={landingPageData.About} />
       <Gallery data={landingPageData.Gallery}/>
       <Contact data={landingPageData.Contact} />
-      <Show data={landingPageData.Show} />
+      
     </div>
   );
 };
