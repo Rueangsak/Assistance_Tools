@@ -8,8 +8,8 @@ const EditForm = ({
 }) => {
     return (
         <form onSubmit={onEditFormSubmit}>
-          <h2>Edit Todo</h2>
-          <label htmlFor="editTodo">Edit todo: </label>
+          <h2>Edit file</h2>
+          <label htmlFor="editTodo"></label>
           <input 
             type="text" 
             name="editTodo"
