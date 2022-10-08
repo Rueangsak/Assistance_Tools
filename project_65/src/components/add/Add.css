@@ -1,9 +1,40 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  color: black;
+  font-style: normal;
+  font-family: Urbanist;  
+  font-size: 16;
+}
+
+.todo-list{
+  /* padding-left: 100px;     */
+  padding-top: 50px;
+  /* padding-right: 100px; */
+}
+
+.todo{
+  padding-bottom: 25px;
+  padding-left: 80px;
+}
+
+.edit{ 
+  display: flex;  
+  flex-direction:row;
+  /* align-items: flex-start; */
+}
+
+.li{
+  flex-direction:row;
+  display: flex;  
+}
+
+.h1{
+  color: black;
 }
 
 .App-logo {
   height: 40vmin;
+  
   pointer-events: none;
 }
 
@@ -14,6 +45,7 @@
 }
 
 .App-header {
+  
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,6 +54,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
