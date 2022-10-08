@@ -17,7 +17,7 @@ const Navbar1 = (props) => {
                 }}
               />
             </span>
-            <span className="text-teaching">Teaching Assistance Online Tools</span>
+            <span className="text-teaching">Teaching Assistance Tools</span>
             <span className="brand-Name">
               <span
                 dangerouslySetInnerHTML={{
