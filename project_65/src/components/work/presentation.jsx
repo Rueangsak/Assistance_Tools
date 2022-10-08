@@ -1,8 +1,8 @@
 import React from 'react'
-
 import PropTypes from 'prop-types'
-
+import AddTodoForm from '../add/AddTodoForm'
 import './presentation.css'
+import TodoItem from '../add/TodoItem'
 
 const Presentation = (props) => {
   return (
@@ -13,11 +13,14 @@ const Presentation = (props) => {
         </div>
         <div className="presentation-container3">
           <div className="presentation-container4">
-            <button className="presentation-button1 button">
+            <AddTodoForm></AddTodoForm>
+            {/* <button className="presentation-button1 button">  
               {props.button1}
-            </button>
+            </button> */}
           </div>
-          <div className="presentation-container5"></div>
+          <div className="presentation-container5">
+            
+          </div>
         </div>
       </div>
     </div>
