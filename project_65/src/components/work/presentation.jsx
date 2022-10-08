@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AddTodoForm from '../add/AddTodoForm'
 import './presentation.css'
-import TodoItem from '../add/TodoItem'
+import Add from '../add/Add'
+// import AddTodoForm from '../add/AddTodoForm'
+// import TodoItem from '../add/TodoItem'
 
-const Presentation = (props) => {
+
+const Presentation = (props, { todo, onEditClick, onDeleteClick } ) => {
   return (
     <div className="presentation-container">
       <div className="presentation-container1">
@@ -13,14 +15,15 @@ const Presentation = (props) => {
         </div>
         <div className="presentation-container3">
           <div className="presentation-container4">
-            <AddTodoForm></AddTodoForm>
+            <Add></Add>
             {/* <button className="presentation-button1 button">  
               {props.button1}
             </button> */}
           </div>
-          <div className="presentation-container5">
-            
-          </div>
+          {/* <div className="presentation-container5">
+            <Add></Add> 
+            <TodoItem></TodoItem>
+          </div> */}
         </div>
       </div>
     </div>
