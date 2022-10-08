@@ -29,7 +29,7 @@
 .presentation-button {
   color: #000000;
   border-width: 0px;
-}
+} 
 .presentation-container3 {
   flex: 0 0 auto;
   width: 83%;
@@ -57,11 +57,11 @@
  
 }
 .presentation-button1 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-color: #54ceb8;
-  border-width: 3px;
-  border-radius: 3px;
-  background-color: rgb(30, 164, 138);
+  border-width: 5px;
+  /* border-radius: 3px; */
+  /* background-color: rgb(30, 164, 138);     */
 }
 .presentation-container5 {
   flex: 0 0 auto;
