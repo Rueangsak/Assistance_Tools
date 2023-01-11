@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import './navbar1.css'
+import '../CSS/navbar1.css'
 
 const Navbar1 = (props) => {
   return (

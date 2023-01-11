@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import './Add.css';
+import '../CSS/Add.css';
 import TodoItem from './TodoItem'
-import AddTodoForm from './AddTodoForm'
+import AddTodoForm from './AddForm'
 import EditForm from './EditForm'
 
 

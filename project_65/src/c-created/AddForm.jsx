@@ -1,4 +1,5 @@
 import React from 'react'
+import '../CSS/Add.css';
 
 const AddTodoForm = ({ todo, onAddFormSubmit, onAddInputChange }) => {
     return (
@@ -10,7 +11,7 @@ const AddTodoForm = ({ todo, onAddFormSubmit, onAddInputChange }) => {
             value={todo} 
             onChange={onAddInputChange}
           />
-          <button type="submit">Add</button>
+          <button  type="submit">Add</button>
         </form>
     )
 }

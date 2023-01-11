@@ -1,21 +1,32 @@
 .App {
   /* text-align: center; */
-  color: black;
+  color: black; 
   font-style: normal;
   font-family: Urbanist;  
   font-size: 16;
+  width: 100%;
 }
 
 .todo-list{
   /* padding-left: 100px;     */
   padding-top: 50px;
+  width: 100%;
   /* padding-right: 100px; */
 }
 
 .todo{
   padding-bottom: 25px;
   padding-left: 80px;
+  flex-direction:row;
 }
+
+.todo-text{
+  width: 20%;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
 
 .edit{ 
   display: flex;  
@@ -23,14 +34,25 @@
   /* align-items: flex-start; */
 }
 
-.li{
-  flex-direction:row;
+.presentation-container7{
   display: flex;  
+  width: 100%; 
 }
 
 .h1{
   color: black;
 }
+
+.presentation-container3{
+  padding: 0 70px 30px 30px;
+  display: flex;  
+  flex-direction:row;
+  
+  justify-content: space-evenly;
+
+}
+
+
 
 .App-logo {
   height: 40vmin;

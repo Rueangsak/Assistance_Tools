@@ -1,8 +1,9 @@
-import "./App.css";
+import "./CSS/App.css"
 import Main from "./pages/Main";
 import { Routes,Route,BrowserRouter,Link, Navigate ,Redirect  } from "react-router-dom";
 import Work from "./pages/Work";
-import './style.css'
+import './CSS/style.css'
+import Open from "./pages/Open";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={< Main />} />
             <Route path="/Work" element={<Work />} />
+            <Route path="/Open" element={<Open />} />
           </Routes>
       </BrowserRouter>
       
