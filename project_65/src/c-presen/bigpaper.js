@@ -18,7 +18,7 @@ const Bigpaper = (props) => {
     <div className="bigpaper-container">
       <div className="bigpaper-container1">
         <div class="bigpaper-container22">
-          <img id="expandedImg" src={props.imgShow} />
+          <img id="expandedImg" style={{width:1000,height:700}} src={props.imgShow} />
           <div id="imgtext"></div>
         </div>
       </div>

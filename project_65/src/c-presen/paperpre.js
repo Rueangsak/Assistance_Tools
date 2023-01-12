@@ -2,6 +2,9 @@ import React from 'react'
 
 import '../CSS/paperpre.css'
 
+
+
+
 const Paperpre = (props) => {
   return (
     <div className="paperpre-container">
@@ -15,6 +18,9 @@ const Paperpre = (props) => {
               )
             })}
           </div>
+
+
+        
       </div>
     </div>
   )
