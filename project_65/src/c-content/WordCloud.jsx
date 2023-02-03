@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 
+
 export default function WordCloud() {
   return (
     <div><p style={{padding:10 }}>WordCloud</p>
@@ -16,11 +17,7 @@ export default function WordCloud() {
     >
       <TextField id="outlined-basic" label="Your question" variant="outlined" />
     </Box>
-
- 
 </div>
-      
-      
   );
 }
 

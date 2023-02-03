@@ -11,9 +11,10 @@ const Paperpre = (props) => {
       <div className ="paperpre-container1">
           <div className="row">
             {props.img.map((data)=>{
+              console.log(data.url)
               return(
                 <div className="column">
-                  <img src={data} className='ima' alt="Nature" onClick={()=>props.clickImg(data)}/>
+                  <img src={data.url} className='ima' alt="Nature" onClick={()=>props.clickImg(data)}/>
                 </div>
               )
             })}

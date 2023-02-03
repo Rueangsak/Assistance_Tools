@@ -1,26 +1,79 @@
 import { Height } from '@mui/icons-material';
+import { red } from '@mui/material/colors';
 import React from 'react'
 import '../CSS/bigpaper.css'
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 
 
 
 
 const Bigpaper = (props) => {
-  function myFunction(imgs) {
-    var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
-    expandImg.src = imgs.src;
-    imgText.innerHTML = imgs.alt;
-    expandImg.parentElement.style.display = "block";
-  }
-  return (
-    <div className="bigpaper-container">
+  // function myFunction(imgs) {
+  //   var expandImg = document.getElementById("expandedImg");
+  //   var imgText = document.getElementById("imgtext");
+  //   expandImg.src = imgs.src;
+  //   imgText.innerHTML = imgs.alt;
+  //   expandImg.parentElement.style.display = "block";
+  // }
+
+  if (props.imgShow.name === "rank") {
+    return (
       <div className="bigpaper-container1">
-        <div class="bigpaper-container22">
-          <img id="expandedImg" style={{width:1000,height:700}} src={props.imgShow} />
-          <div id="imgtext"></div>
+        <div className="bigpaper-container" style={{width:900,height:700}}>
+
+          <TextField id="outlined-basic" style={{padding:20}}/>
+          <br/>
+          <br/>
+          <TextField
+            hiddenLabel
+            id="filled-hidden-label-small"
+            defaultValue="Item1"
+            variant="standard"
+            size="small"
+            
+          />
+          
         </div>
+      </div>
+    )
+  }
+  if (props.imgShow.name === "open") {
+    return (
+      <div className="bigpaper-container1">
+        <div className="bigpaper-container" style={{width:900,height:700}}>
+          <h1>A</h1>
+        </div>
+      </div>
+    )
+  }  if (props.imgShow.name === "word") {
+    return (
+      <div className="bigpaper-container1">
+      <div className="bigpaper-container" style={{width:900,height:700}}>
+        <h1>S</h1>
+      </div>
+    </div>
+    )
+  }  if (props.imgShow.name === "multi") {
+    return (
+      <div className="bigpaper-container1">
+        <div className="bigpaper-container" style={{width:900,height:700}}>
+          <h1>C</h1>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="bigpaper-container2">
+      <div className="bigpaper-container1">
+
+        {/* <div class="bigpaper-container22">
+          <img id="expandedImg" style={{width:1000,height:700}} src={props.imgShow.url} />
+          <div id="imgtext"></div>
+        </div> */}
+
       </div>
     </div>
   )

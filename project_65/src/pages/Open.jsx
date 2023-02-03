@@ -35,7 +35,7 @@ const Open = (props) => {
         
         <div className="page-container4">
           <h3 style={{padding:10}}>content</h3>
-          <Content/>
+          <Content imgShow={imgShow}/>
         </div>
       </div>
     </div>
