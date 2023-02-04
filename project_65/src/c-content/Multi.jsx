@@ -3,10 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import AddDynamicInput from './AddItemRanking';
 
-
-
-export default function BasicTextFields(props) {
-  //console.log("rank",props)
+export default function Multi(props) {
   const addItem=()=>{
     let newImgShow =  props.imgShow
     newImgShow.items.push({text:"",point:0})

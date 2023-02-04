@@ -14,9 +14,34 @@ const Open = (props) => {
   // const [img,setImg] = useState(["https://www.w3schools.com/howto/img_nature.jpg"])
   const [img,setImg] = useState([])
   const [imgShow,setImgShow] = useState("")
+  const [indexShow,setIndexShow] = useState(0)
+ 
   const addImg=(newImg)=>{
     setImg([...img,newImg])
   }
+
+
+  // const [items,setItems] = useState([])
+  // const addItems=(newItems)=>{
+  //   setItems([...items,newItems])
+  // }
+
+
+  const clickcenters =(newcenters,index)=>{
+    setImgShow(newcenters)
+    setIndexShow(index)
+  }
+
+
+
+  const changdata=(newImgShow)=>{
+    let newimg = img
+    newimg[indexShow] = newImgShow
+    setImgShow({...newImgShow})
+    setImg([...newimg])
+  }
+
+
 
   return (
     <div className="page-container">
@@ -25,7 +50,7 @@ const Open = (props) => {
       <div className="page-container1">
 
         <div className="page-container2">
-          <Paperpre img={img} clickImg={setImgShow}/>
+          <Paperpre img={img} clickImg={clickcenters}/>
         </div>
 
 
@@ -35,7 +60,7 @@ const Open = (props) => {
         
         <div className="page-container4">
           <h3 style={{padding:10}}>content</h3>
-          <Content imgShow={imgShow}/>
+          <Content imgShow={imgShow} indexShow={indexShow} changdata={changdata}/>
         </div>
       </div>
     </div>

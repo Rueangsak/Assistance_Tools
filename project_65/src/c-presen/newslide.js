@@ -2,8 +2,13 @@ import React,{useState} from 'react'
 import PropTypes from 'prop-types'
 import '../CSS/newslide.css'
 const Newslide = (props) => {
-  const [imgData,setImgData] = useState([{name:"rank",url:"../../img/rank.jpg"},{name:"open",url:"../../img/open.jpg"},{name:"word",url:"../../img/word.jpg"},{name:"multi",url:"../../img/multi.jpg"}])
+
+
+  const [imgData,setImgData] = useState([{name:"rank",items:[],url:"../../img/rank.jpg"},{name:"open",items:[],url:"../../img/open.jpg"},{name:"word",items:[],url:"../../img/word.jpg"},{name:"multi",items:[],url:"../../img/multi.jpg"}])
   const [showData,setShowData] = useState(false)
+
+
+
   return (
     <div className="newslide-container">
       <div className="newslide-navbar navbar-container">

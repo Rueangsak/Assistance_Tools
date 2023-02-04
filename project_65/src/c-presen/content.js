@@ -1,6 +1,7 @@
 import React from 'react'
 import Ranking from '../c-content/Ranking'
 import QA from '../c-content/QA'
+import Multi from '../c-content/Multi'
 import WordCloud from '../c-content/WordCloud'
 // import WordCloud from '../c-content/WordCloud'
 import '../CSS/content.css'
@@ -13,9 +14,10 @@ const Content = (props) => {
   console.log(props.imgShow)
 
   if (props.imgShow.name === "rank") {
+
     return (
       <div className="content-container">
-        <Ranking />
+        <Ranking indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata}/>
       </div>
     )
   }
@@ -36,7 +38,7 @@ const Content = (props) => {
   else if (props.imgShow.name === "multi") {
     return (
       <div className="content-container">
-        <WordCloud />
+        <Multi indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata} />
       </div>
     )
   }

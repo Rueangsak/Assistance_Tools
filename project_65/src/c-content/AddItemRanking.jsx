@@ -19,7 +19,7 @@ function AddDynamicInput(){
        deletVal.splice(i,1)
        setVal(deletVal)  
    }    
-   console.log(val,"data-")
+//    console.log(val,"data-")
 return(
     <>  
     <div style={{padding:10}}><button onClick={()=>handleAdd()} style={{paddingRight:100}}>Add Item</button></div>
