@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 
 
 
-export default function WordCloud() {
+export default function WordCloud(props) {
   return (
     <div><p style={{padding:10 }}>WordCloud</p>
    <Box
@@ -15,7 +15,7 @@ export default function WordCloud() {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="Your question" variant="outlined" />
+      <TextField id="outlined-basic" label="Your question" variant="outlined" value={props.imgShow.tit} onChange={(e)=>props.changtit(e.target.value)}/>
     </Box>
 </div>
   );

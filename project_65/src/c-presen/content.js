@@ -16,29 +16,29 @@ const Content = (props) => {
   if (props.imgShow.name === "rank") {
 
     return (
-      <div className="content-container">
-        <Ranking indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata}/>
+      <div className="content-container"> 
+        <Ranking indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata} changtit={props.changtit} />
       </div>
     )
   }
   else if (props.imgShow.name === "open") {
     return (
       <div className="content-container">
-        <QA />
+        <QA imgShow={props.imgShow} changtit={props.changtit}/>
       </div>
     )
   }
   else if (props.imgShow.name === "word") {
     return (
       <div className="content-container">
-        <WordCloud />
+        <WordCloud imgShow={props.imgShow} changtit={props.changtit}/>
       </div>
     )
   }
   else if (props.imgShow.name === "multi") {
     return (
       <div className="content-container">
-        <Multi indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata} />
+        <Multi indexShow={props.indexShow} imgShow={props.imgShow} changdata={props.changdata} changtit={props.changtit} />
       </div>
     )
   }

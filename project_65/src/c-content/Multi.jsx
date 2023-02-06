@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import AddDynamicInput from './AddItemRanking';
+
 
 export default function Multi(props) {
   const addItem=()=>{
@@ -20,7 +20,7 @@ export default function Multi(props) {
     props.changdata(newImgShow)
   }
   return (
-    <div><p style={{padding:10 }}>Ranking</p>
+    <div><p style={{padding:10 }}>Multiple choice</p>
     <Box
       component="form"
       sx={{
@@ -29,9 +29,9 @@ export default function Multi(props) {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="Your question" variant="outlined" />
+      <TextField id="outlined-basic" label="Your question" variant="outlined" value={props.imgShow.tit} onChange={(e)=>props.changtit(e.target.value)}/>
     </Box>
-    <button style={{paddingRight:100}} onClick={()=>addItem()}>Add Item</button>
+    <button style={{paddingRight:50}} onClick={()=>addItem()}>Add Item</button>
     
     {props.imgShow.items.map((data,index)=>{
         return(
@@ -43,7 +43,7 @@ export default function Multi(props) {
       }
     )}
 
-      {/* <AddDynamicInput></AddDynamicInput> */}
+
  
 </div>
       

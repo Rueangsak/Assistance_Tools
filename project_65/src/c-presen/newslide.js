@@ -4,7 +4,7 @@ import '../CSS/newslide.css'
 const Newslide = (props) => {
 
 
-  const [imgData,setImgData] = useState([{name:"rank",items:[],url:"../../img/rank.jpg"},{name:"open",items:[],url:"../../img/open.jpg"},{name:"word",items:[],url:"../../img/word.jpg"},{name:"multi",items:[],url:"../../img/multi.jpg"}])
+  const [imgData,setImgData] = useState([{name:"rank",items:[],tit:"",url:"../../img/rank.jpg"},{name:"open",items:[],tit:"",url:"../../img/open.jpg"},{name:"word",items:[],tit:"",url:"../../img/word.jpg"},{name:"multi",items:[],tit:"",url:"../../img/multi.jpg"}])
   const [showData,setShowData] = useState(false)
 
 

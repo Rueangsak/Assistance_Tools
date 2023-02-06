@@ -15,7 +15,9 @@ const Open = (props) => {
   const [img,setImg] = useState([])
   const [imgShow,setImgShow] = useState("")
   const [indexShow,setIndexShow] = useState(0)
- 
+  
+  
+
   const addImg=(newImg)=>{
     setImg([...img,newImg])
   }
@@ -27,17 +29,26 @@ const Open = (props) => {
   // }
 
 
-  const clickcenters =(newcenters,index)=>{
+  const clickcenters = (newcenters,index)=>{
     setImgShow(newcenters)
     setIndexShow(index)
   }
 
 
 
-  const changdata=(newImgShow)=>{
+  const changdata = (newImgShow)=>{
     let newimg = img
     newimg[indexShow] = newImgShow
     setImgShow({...newImgShow})
+    setImg([...newimg])
+  }
+
+
+
+  const changtit = (newTitShow)=>{
+    let newimg = img
+    newimg[indexShow].tit = newTitShow
+    setImgShow({...newimg[indexShow]})
     setImg([...newimg])
   }
 
@@ -60,7 +71,7 @@ const Open = (props) => {
         
         <div className="page-container4">
           <h3 style={{padding:10}}>content</h3>
-          <Content imgShow={imgShow} indexShow={indexShow} changdata={changdata}/>
+          <Content imgShow={imgShow} indexShow={indexShow} changdata={changdata} changtit={changtit} />
         </div>
       </div>
     </div>

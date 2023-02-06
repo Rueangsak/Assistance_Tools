@@ -24,8 +24,11 @@ const Bigpaper = (props) => {
       <div className="bigpaper-container1">
         <div className="bigpaper-container" style={{width:1020,height:700}}>
 
-          <TextField id="outlined-basic" style={{padding:20}}/>
-          <br/>
+          <TextField id="outlined-basic" 
+          value={props.imgShow.tit}
+          style={{padding:20}}
+          />
+
           <br/>
           {props.imgShow.items.map((data,index)=>{
             return(
@@ -38,7 +41,6 @@ const Bigpaper = (props) => {
                 size="small"
                 style={{padding:50}}
               />
-              <br/>
               </div>
             )
           })}
@@ -48,29 +50,43 @@ const Bigpaper = (props) => {
       </div>
     )
   }
+
   if (props.imgShow.name === "open") {
     return (
       <div className="bigpaper-container1">
         <div className="bigpaper-container" style={{width:1020,height:700}}>
-          <TextField id="outlined-basic" style={{padding:20}}/>
+          <TextField id="outlined-basic"
+          value={props.imgShow.tit} 
+          style={{padding:20}}
+          />
         </div>
       </div>
     )
-  }  if (props.imgShow.name === "word") {
+  }  
+
+  if (props.imgShow.name === "word") {
     return (
       <div className="bigpaper-container1">
       <div className="bigpaper-container" style={{width:1020,height:700}}>
-        <TextField id="outlined-basic" style={{padding:20}}/>
+        <TextField id="outlined-basic"
+        value={props.imgShow.tit} 
+        style={{padding:20}}
+        />
       </div>
     </div>
     )
-  }  if (props.imgShow.name === "multi") {
+  }  
+
+  if (props.imgShow.name === "multi") {
     return (
       <div className="bigpaper-container1">
         <div className="bigpaper-container" style={{width:1020,height:700}}>
-        <TextField id="outlined-basic" style={{padding:20}}/>
+        <TextField id="outlined-basic"
+        value={props.imgShow.tit} 
+        style={{padding:20}}
+        />
           <br/>
-          <br/>
+          
           {props.imgShow.items.map((data,index)=>{
             return(
               <div key={index}>
@@ -82,7 +98,7 @@ const Bigpaper = (props) => {
                 size="small"
                 style={{padding:50}}
               />
-              <br/>
+              
               </div>
             )
           })}
