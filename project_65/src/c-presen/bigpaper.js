@@ -1,18 +1,24 @@
-
+import { Height } from '@mui/icons-material';
+import { red } from '@mui/material/colors';
+import React from 'react'
 import '../CSS/bigpaper.css'
+import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 
-import React, {useState, useRef} from 'react';
+
 
 
 const Bigpaper = (props) => {
-
-
+  // function myFunction(imgs) {
+  //   var expandImg = document.getElementById("expandedImg");
+  //   var imgText = document.getElementById("imgtext");
+  //   expandImg.src = imgs.src;
+  //   imgText.innerHTML = imgs.alt;
+  //   expandImg.parentElement.style.display = "block";
+  // }
 
   console.log("Bigpaper" , props);
-
-  
   if (props.imgShow.name === "rank") {
     return (
       <div className="bigpaper-container1">
@@ -44,7 +50,6 @@ const Bigpaper = (props) => {
       </div>
     )
   }
-
 
   if (props.imgShow.name === "open") {
     return (
@@ -101,10 +106,6 @@ const Bigpaper = (props) => {
       </div>
     )
   }
-
-
-
-
 
   return (
     <div className="bigpaper-container2">

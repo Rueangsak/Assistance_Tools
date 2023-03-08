@@ -19,7 +19,7 @@ const Paperpre = (props) => {
             })}
           </div>
 
-            
+
         
       </div>
     </div>

@@ -11,6 +11,7 @@ import { padding } from '@mui/system'
 import { Javascript, PaddingTwoTone } from '@mui/icons-material'
 
 const Open = (props) => {
+  // const [img,setImg] = useState(["https://www.w3schools.com/howto/img_nature.jpg"])
   const [img,setImg] = useState([])
   const [imgShow,setImgShow] = useState("")
   const [indexShow,setIndexShow] = useState(0)
@@ -22,7 +23,11 @@ const Open = (props) => {
   }
 
 
- 
+  // const [items,setItems] = useState([])
+  // const addItems=(newItems)=>{
+  //   setItems([...items,newItems])
+  // }
+
 
   const clickcenters = (newcenters,index)=>{
     setImgShow(newcenters)
