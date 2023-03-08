@@ -7,21 +7,12 @@ import React, {useState, useRef} from 'react';
 
 
 const Bigpaper = (props) => {
-  // function myFunction(imgs) {
-  //   var expandImg = document.getElementById("expandedImg");
-  //   var imgText = document.getElementById("imgtext");
-  //   expandImg.src = imgs.src;
-  //   imgText.innerHTML = imgs.alt;
-  //   expandImg.parentElement.style.display = "block";
-  // }
-
-
-
-
 
 
 
   console.log("Bigpaper" , props);
+
+  
   if (props.imgShow.name === "rank") {
     return (
       <div className="bigpaper-container1">
@@ -53,6 +44,7 @@ const Bigpaper = (props) => {
       </div>
     )
   }
+
 
   if (props.imgShow.name === "open") {
     return (
